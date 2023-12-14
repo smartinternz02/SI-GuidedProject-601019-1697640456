@@ -1,0 +1,15 @@
+.desktop {
+  text-align: center;
+  background-image: url('../image-1.png');
+  background-color: #ffffff;
+  height: 1024px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop .div {
+  text-align: center;
+  /* Add styles for .div if needed */
+  color:white;
+}

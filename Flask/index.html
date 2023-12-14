@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+  <div class="desktop">
+    <div class="overlap-group">
+      <h1 class="div">LOAN PREDICTOR</h1>
+
+      <div class="div">GENDER</div>
+      <input type="text" class="text-input" id="genderInput" placeholder="Enter Gender">
+      <br>
+      <br>
+      <div class="div">MARRIED</div>
+      <input type="text" class="text-input" id="marriedInput" placeholder="Enter Marital Status">
+      <br>
+      <br>
+      <div class="div">DEPENDENTS</div>
+      <input type="text" class="text-input" id="dependentsInput" placeholder="Enter Dependents">
+      <br>
+      <br>
+      <div class="div">EDUCATION</div>
+      <input type="text" class="text-input" id="educationInput" placeholder="Enter Education">
+      <br>
+      <br>
+      <div class="div">SELF EMPLOYED</div>
+      <input type="text" class="text-input" id="selfEmployedInput" placeholder="Enter Self Employed">
+      <br>
+      <br>
+      <div class="div">APPLICATION INCOME</div>
+      <input type="text" class="text-input" id="applicantIncomeInput" placeholder="Enter Applicant Income">
+      <br>
+      <br>
+      <div class="div">CO-APPLICANT INCOME</div>
+      <input type="text" class="text-input" id="coApplicantIncomeInput" placeholder="Enter Co-Applicant Income">
+      <br>
+      <br>
+      <div class="div">LOAN AMOUNT</div>
+      <input type="text" class="text-input" id="loanAmountInput" placeholder="Enter Loan Amount">
+      <br>
+      <br>
+      <div class="div">LOAN AMOUNT TERM</div>
+      <input type="text" class="text-input" id="loanAmountTermInput" placeholder="Enter Loan Amount Term">
+      <br>
+      <br>
+      <div class="div">CREDIT HISTORY</div>
+      <input type="text" class="text-input" id="creditHistoryInput" placeholder="Enter Credit History">
+      <br>
+      <br>
+      <div class="div">PROPERTY AREA</div>
+      <input type="text" class="text-input" id="propertyAreaInput" placeholder="Enter Property Area">
+      <br>
+      <br>
+      <div class="div">LOAN STATUS</div>
+      <output class="loan-status div" id="loanStatusOutput"></output>
+
+      <button class="predict-button" onclick="predictLoan()">PREDICT</button>
+    </div>
+  </div>
+
+  <script>
+    function predictLoan() {
+      // Fetch input values
+      var gender = document.getElementById('genderInput').value;
+      var married = document.getElementById('marriedInput').value;
+      var dependents = document.getElementById('dependentsInput').value;
+      var education = document.getElementById('educationInput').value;
+      var selfEmployed = document.getElementById('selfEmployedInput').value;
+      var applicantIncome = document.getElementById('applicantIncomeInput').value;
+      var coApplicantIncome = document.getElementById('coApplicantIncomeInput').value;
+      var loanAmount = document.getElementById('loanAmountInput').value;
+      var loanAmountTerm = document.getElementById('loanAmountTermInput').value;
+      var creditHistory = document.getElementById('creditHistoryInput').value;
+      var propertyArea = document.getElementById('propertyAreaInput').value;
+
+      // Add your machine learning prediction logic here
+      // Replace the following placeholder logic with your actual prediction code
+      var loanStatus = "Approved"; 
+
+      // Update loan status output
+      document.getElementById('loanStatusOutput').innerText = "Loan Status: " + loanStatus;
+    }
+  </script>
+</body>
+</html>
