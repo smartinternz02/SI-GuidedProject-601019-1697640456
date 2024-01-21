@@ -35,7 +35,7 @@ Here we have uploaded the file which contains the link for a video about our pro
 To download the code for the project, simply download the files from 'project_manual_and_code/project_code_and_webdesign_code'. Then, load the files in files into a common folder. Next, run the app.py file. Now, go the web browser and write the localhost url (http://127.0.0.1:5000) to get the result.
 
 
-###How to Use the Project: 
+### How to Use the Project: 
 please refer to the 'project_video' file to get an idea on how to use this project.
 
 ### Credentials:
